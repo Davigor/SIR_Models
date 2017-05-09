@@ -1,5 +1,5 @@
 %% parameters
-N = 3000000;                 % population size
+N = 3000000;                % population size
 R0 = 2;                     % basic reproductive number; modeling influenza
 gamma = 1/7;                % avg. infectious period = 7 days
 

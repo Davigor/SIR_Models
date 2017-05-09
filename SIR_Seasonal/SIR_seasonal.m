@@ -9,7 +9,7 @@ tend = 700;
 %% initial conditions (state values)
 u = [ N - 1; 1; 0 ];
  
-%% solve ODE
+%% solve ODE with ode45
 [T1, U1] = ode45(@(t, u) SIR_seasonal_fxn(t, u, R0, gamma, N, phi), 1:0.1:tend, u);
 [T2, U2] = ode45(@(t, u) SIR_seasonal_fxn(t, u, R0, gamma, N, phi), 80:0.1:tend, u);
 [T3, U3] = ode45(@(t, u) SIR_seasonal_fxn(t, u, R0, gamma, N, phi), 200:0.1:tend, u);
